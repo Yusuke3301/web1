@@ -3,116 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Férias Escolares - Wireframe</title>
-  <link href="https://fonts.googleapis./css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Férias Escolares - Página Inicial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="header">
     <div class="logo">Férias Escolares</div>
     <nav class="menu-desktop">
-      <a href="#" class="active">Home</a>
-      <a href="#">Destinos</a>
-      <a href="#">Segurança</a>
-      <a href="#">Vídeos</a>
-      <a href="#">Contato</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="atividades.html">Atividades</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="leitura.html">Dicas de Leitura</a>
+      <a href="contato.html">Contato</a>
     </nav>
     <div class="menu-mobile">☰</div>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <span class="hero-badge">✦ Férias 2026</span>
     <h1>Aproveite suas Férias ao Máximo!</h1>
     <p>Dicas de viagens, segurança e atividades educativas para alunos, pais e professores.</p>
-    <a href="#" class="hero-btn">Ver Atividades →</a>
+    <a href="atividades.html" class="hero-btn">Ver Atividades →</a>
   </section>
 
-  <!-- VÍDEOS -->
-  <section class="videos">
-    <span class="section-label">Multimídia</span>
-    <h2 class="section-title">Vídeos e Dicas Rápidas</h2>
-    <div class="video-container">
-      <div class="video-card">
-        <div class="video-placeholder">🎬</div>
-        <div class="video-desc">
-          <strong>Como planejar sua viagem</strong>
-          <span>Dicas rápidas para organizar tudo</span>
-        </div>
-      </div>
-      <div class="video-card">
-        <div class="video-placeholder">🎬</div>
-        <div class="video-desc">
-          <strong>Atividades para fazer em casa</strong>
-          <span>Ideias educativas e divertidas</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DESTINOS -->
-  <section class="destinos">
+  <section class="section-white">
     <span class="section-label">Explore</span>
-    <h2 class="section-title">Descubra novos lugares</h2>
+    <h2 class="section-title">O que você encontra aqui</h2>
     <div class="cards">
       <div class="card">
-        <span class="card-icon">🏖️</span>
-        Praias e Litoral
+        <span class="card-icon">🎯</span>
+        <strong>Atividades</strong>
+        <p>Sugestões divertidas e educativas para as férias</p>
       </div>
       <div class="card">
-        <span class="card-icon">🧗</span>
-        Turismo de Aventura
+        <span class="card-icon">📅</span>
+        <strong>Eventos</strong>
+        <p>Agenda de eventos e programações especiais</p>
       </div>
       <div class="card">
-        <span class="card-icon">🏛️</span>
-        Museus e Cultura
+        <span class="card-icon">📚</span>
+        <strong>Dicas de Leitura</strong>
+        <p>Livros recomendados para todas as idades</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">✉️</span>
+        <strong>Contato</strong>
+        <p>Fale conosco com dúvidas e sugestões</p>
       </div>
     </div>
   </section>
 
-  <!-- SEGURANÇA -->
-  <section class="seguranca">
-    <span class="section-label">Orientações</span>
-    <h2 class="section-title">Dicas de Segurança</h2>
-    <div class="seguranca-grid">
-      <div class="seguranca-item">
-        <span class="icon">✅</span>
-        <p>Check-list de viagem</p>
-      </div>
-      <div class="seguranca-item">
-        <span class="icon">☀️</span>
-        <p>Cuidados com o sol</p>
-      </div>
-      <div class="seguranca-item">
-        <span class="icon">👨‍👩‍👧</span>
-        <p>Supervisão de adultos</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section class="contato">
-    <div class="contato-inner">
-      <div class="contato-info">
-        <span class="section-label">Fale conosco</span>
-        <h2 class="section-title">Entre em Contato</h2>
-        <p>Tem dúvidas, sugestões ou quer colaborar com o projeto? Preencha o formulário e entraremos em contato em breve.</p>
-      </div>
-      <form>
-        <div class="form-row">
-          <input type="text" placeholder="Nome completo">
-          <input type="email" placeholder="E-mail acadêmico">
+  <section class="section-green">
+    <span class="section-label">Destaques</span>
+    <h2 class="section-title">Por que aproveitar bem as férias?</h2>
+    <div class="list-grid">
+      <div class="list-item">
+        <span class="icon">🧠</span>
+        <div>
+          <strong>Desenvolvimento pessoal</strong>
+          <span>Atividades criativas estimulam o aprendizado fora da sala de aula</span>
         </div>
-        <input type="text" placeholder="Assunto">
-        <textarea placeholder="Mensagem"></textarea>
-        <button type="submit" class="submit-btn">✉ Enviar Mensagem</button>
-      </form>
+      </div>
+      <div class="list-item">
+        <span class="icon">🌍</span>
+        <div>
+          <strong>Novas experiências</strong>
+          <span>Conhecer lugares e culturas diferentes amplia a visão de mundo</span>
+        </div>
+      </div>
+      <div class="list-item">
+        <span class="icon">👨‍👩‍👧</span>
+        <div>
+          <strong>Tempo em família</strong>
+          <span>As férias são uma ótima oportunidade para fortalecer vínculos</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-left">IFMS — Campus Campo Grande | TSI 2026</div>
     <div class="footer-center">Desenvolvido por Douglas T. e Vinicius P.</div>
