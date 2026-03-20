@@ -42,8 +42,8 @@ section, header, footer, .card, .video-card, input, textarea, button {
 }
 
 /* VIDEOS */
-.videos {
-  padding: 20px;
+video {
+  pointer-events: none;
 }
 
 .video-container {
