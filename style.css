@@ -42,25 +42,28 @@ section, header, footer, .card, .video-card, input, textarea, button {
 }
 
 /* VIDEOS */
-video {
-  pointer-events: none;
+.video-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza tudo */
+  padding: 10px;
+}
+
+.video-card video {
+  width: 80%;           /* diminui um pouco */
+  max-width: 300px;     /* não deixa ficar gigante */
+  height: 150px;
+  background: #ccc;
+  display: block;
 }
 
 .video-container {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  justify-content: center; /* centraliza os cards */
+  flex-wrap: wrap; /* ajuda no responsivo */
 }
-
-.video-card {
-  flex: 1;
-  padding: 10px;
-}
-
-.video-card .box {
-  height: 100px;
-  margin-bottom: 10px;
-}
-
 /* DESTINOS */
 .destinos {
   padding: 20px;
