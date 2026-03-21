@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #eee;
+  padding: 20px;
+}
+
+section, header, footer, .card, .video-card, input, textarea, button {
+  border: 2px solid #999;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.menu-desktop a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+}
+
+/* VIDEOS */
+.videos {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.videos h2 {
+  margin-bottom: 16px;
+}
+
+.video-container {
+  display: flex;
+  gap: 20px;
+}
+
+.video-card {
+  flex: 1;
+  padding: 10px;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 150px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.video-desc strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* CARDS */
+.cards-section {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.cards-section h2 {
+  margin-bottom: 16px;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  flex: 1;
+  padding: 30px 10px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+/* LIST SECTION */
+.list-section {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.list-section h2 {
+  margin-bottom: 12px;
+}
+
+.list-section ul {
+  padding-left: 20px;
+}
+
+.list-section ul li {
+  margin-bottom: 8px;
+}
+
+/* FORM SECTION */
+.form-section {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.form-section h2 {
+  margin-bottom: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  width: 100%;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background: #ddd;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #fff;
+  font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-desktop { display: none; }
+  .menu-mobile { display: block; font-size: 22px; }
+
+  .video-container { flex-direction: column; }
+  .cards { flex-direction: column; }
+
+  footer {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
